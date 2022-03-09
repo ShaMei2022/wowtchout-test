@@ -33,7 +33,6 @@ Get Web Title
     Status Should Be    OK    ${grast2}
     Log    ${grast2.text}
 
-
 Get Title
     [Documentation]    抓取原標題
     [Tags]    grast
@@ -43,8 +42,6 @@ Get Title
         ${text}=    GET Text    ${T}
         Log    ${text}
     END
-
-
 
 Open Viedo 
     [Documentation]    進入所有影片並關閉
@@ -71,7 +68,6 @@ Get Viedo Information Bar
         Press Keys    None    ESC
     Set Focus To Element    //*[@id="__next"]/div/div[2]/div/div/div[1]/div/div[3]/div[10]/a
     END
-
 
 Compare Two Data
     [Documentation]    比對兩筆資料
@@ -103,9 +99,6 @@ Compare Two Data
         Should Be Equal    ${actual}    ${e}
     END
 
-
-
-
 Compare Title Data
     [Documentation]    拿取內頁標題比對
     [Tags]    grast
@@ -135,4 +128,3 @@ Compare Title Data
         Press Keys    None    ESC
         Set Focus To Element    //*[@id="__next"]/div/div[2]/div/div/div[1]/div/div[3]/div[10]/a
     END
-# 

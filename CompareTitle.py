@@ -1,11 +1,9 @@
 # 互相比對selenium跟requests的資料
 
-
 from selenium import webdriver
 import json
 from turtle import title
 import requests
-
 
 # 此段為request
 url = "https://www.wowtchout.com/api/graphql"
@@ -17,10 +15,8 @@ headers = {
 
 response = requests.request("POST", url, data=payload, headers=headers)
 
-
 dictinfo = json.loads(response.text)
 print(json.loads(response.text))
-
 
 # 此段為selenium
 Path = "/Users/yorklin/USB/chromedriver_win32/chromedriver.exe"
@@ -28,8 +24,6 @@ driver = webdriver.Chrome(Path)
 driver.get("https://www.wowtchout.com/map")
 title = driver.find_elements_by_xpath(
     '//*[@id="__next"]/div/div[2]/div/div/div[1]/div/div[3]/div[*]/a/div[2]/h3')
-len(title)
-
 
 for i in range(len(title)):
     print("實際的:"+title[i].text+"\n"+"預期的:" +
