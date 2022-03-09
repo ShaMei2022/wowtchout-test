@@ -19,7 +19,7 @@ dictinfo = json.loads(response.text)
 print(json.loads(response.text))
 
 # 此段為selenium
-Path = "/Users/yorklin/USB/chromedriver_win32/chromedriver.exe"
+Path = "./chromedriver"
 driver = webdriver.Chrome(Path)
 driver.get("https://www.wowtchout.com/map")
 title = driver.find_elements_by_xpath(
