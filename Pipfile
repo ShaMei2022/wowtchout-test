@@ -7,6 +7,9 @@ name = "pypi"
 allure-pytest = "*"
 webdrivermanager = "*"
 selenium = "*"
+selenium-requests = "*"
+robotframework-selenium2library = "*"
+robotframework-requests = "*"
 
 [dev-packages]
 

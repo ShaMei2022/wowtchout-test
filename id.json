@@ -1,0 +1,12 @@
+{
+    "operationName": "Videos",
+    "variables": {
+        "type": "QUADRILATERAL",
+        "limit": 10,
+        "xmin": "25.185046759272",
+        "ymin": "121.4631424507324",
+        "xmax": "24.915385147152584",
+        "ymax": "121.62004094926756"
+    },
+    "query": "query Videos($type: EVideosType!, $limit: Int, $lat: String, $lng: String, $xmin: String, $ymin: String, $xmax: String, $ymax: String) {  videos(    type: $type    limit: $limit    lat: $lat    lng: $lng    xmin: $xmin    ymin: $ymin    xmax: $xmax    ymax: $ymax  ) {    ...VideoFragment    __typename  }}fragment VideoFragment on Video {  video_id  title  youtube_uri  description  user_id  lat  lng  address  happened_time  start_time  end_time  views  created_at  published_at  status  is_anonymous  feedback  user {    id    name    image    __typename  }  tags {    tag {      tag_id      name      __typename    }    __typename  }  images {    image {      image_id      url      __typename    }    __typename  }  __typename}"
+}

@@ -5,6 +5,7 @@ Library    RequestsLibrary
 Library    Selenium2Library
 Library    Screenshot
 Library    OperatingSystem
+
 Suite Setup    Open Browser    https://www.wowtchout.com/map    chrome    executable_path=./chromedriver
 Suite Teardown    Close Browser
 
