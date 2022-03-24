@@ -6,7 +6,7 @@ jobs:
 
     services:
       web_driver_service:
-        image: selenium/standalone-chrome
+        image: selenium/standalone-chrome:99.0.4844.74
         ports:
           - 4444:4444
 
