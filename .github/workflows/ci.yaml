@@ -3,6 +3,13 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+
+    services:
+      web_driver_service:
+        image: selenium/standalone-chrome
+        ports:
+          - 4444:4444
+
     steps:
       - name: Check out repository code # todo
         uses: actions/checkout@v2
