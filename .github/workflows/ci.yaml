@@ -28,6 +28,7 @@ jobs:
           pipenv install
 
       - name: Run test case
+        uses: joonvena/robotframework-docker-action@v1.0
         run: |
           pipenv run robot wowtchout.robot
 
