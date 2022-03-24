@@ -6,7 +6,7 @@ Library    Selenium2Library
 Library    Screenshot
 Library    OperatingSystem
 
-Suite Setup    Open Browser    https://www.wowtchout.com/map    remote_url=http://localhost:4444/wd/hub    desired_capabilities=
+Suite Setup    Open Browser    https://www.wowtchout.com/map    headlesschrome    remote_url=http://localhost:4444/wd/hub
 Suite Teardown    Close Browser
 
 *** Test Cases ***
