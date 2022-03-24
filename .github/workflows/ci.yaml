@@ -1,7 +1,7 @@
-name: GitHub Actions Demo
+name: GitHub Actions
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Test-Case:
     runs-on: ubuntu-latest
 
     services:
@@ -34,6 +34,6 @@ jobs:
         run: |
           pipenv install
 
-      - name: Run test case
+      - name: 🎉 Run test case
         run: |
           pipenv run robot wowtchout.robot
