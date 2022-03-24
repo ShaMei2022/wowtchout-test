@@ -22,10 +22,13 @@ jobs:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
 
-      - name: Install dependencies & Run test case
+      - name: Install dependencies
         if: steps.cache-pipenv.outputs.cache-hit != 'true'
         run: |
           pipenv install
+
+      - name: Run test case
+        run: |
           pipenv run robot wowtchout.robot
 
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
