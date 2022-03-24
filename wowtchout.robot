@@ -6,7 +6,7 @@ Library    Selenium2Library
 Library    Screenshot
 Library    OperatingSystem
 
-Suite Setup    Open Browser    https://www.wowtchout.com/map    chrome    remote_url=http://localhost:4444
+Suite Setup    Open Browser    https://www.wowtchout.com/map    chrome    remote_url=http://localhost:4444/wd/hub
 Suite Teardown    Close Browser
 
 *** Test Cases ***
